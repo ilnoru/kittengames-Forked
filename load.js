@@ -3,10 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const addGameButton = document.getElementById('add-game-btn');
   const resetStorageButton = document.getElementById('reset-storage-btn');
 
-  homeButton.addEventListener('click', function() {
-    window.location.href = 'index.html';
-  });
-
   addGameButton.addEventListener('click', function() {
     const jsonUrl = prompt('Enter the URL of the JSON file containing the games:');
     if (jsonUrl) {
