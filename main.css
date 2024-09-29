@@ -157,12 +157,46 @@ select option {
   width: 100%;
   max-width: 240px;
   margin: 20px;
-  padding: 15px;
+  padding: 0;
   border: 1px solid var(--outline-color);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: var(--card-content-background);
+  position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.05);  /* Grows the card by 5% */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Adds a stronger shadow on hover */
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  cursor: pointer;
+}
+
+.game-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.game-card:hover .game-info {
+  opacity: 1;
 }
 
 .game-card:hover {
@@ -170,36 +204,11 @@ select option {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.game-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.game-info {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.game-info h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: var(--text-color);
-}
-
-.game-info button {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.game-info button:hover {
-  background-color: var(--button-hover-color);
+/* Always show game name in bottom left for mobile devices */
+@media screen and (max-width: 768px) {
+  .game-info {
+    opacity: 1 !important;
+  }
 }
 
 .header-right button {

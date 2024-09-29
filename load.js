@@ -11,9 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
           const gameCard = document.createElement('div');
           gameCard.classList.add('game-card');
 
+          const link = document.createElement('a');
+          link.href = game.newtab ? game.url : `play.html?game=${btoa(game.name)}`;
+          if (game.newtab) {
+            link.target = '_blank';
+          }
+
           const img = document.createElement('img');
           img.src = game.image;
-          gameCard.appendChild(img);
+          link.appendChild(img);
 
           const gameInfo = document.createElement('div');
           gameInfo.classList.add('game-info');
@@ -22,23 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
           name.textContent = game.name;
           gameInfo.appendChild(name);
 
-          const playButton = document.createElement('button');
-          if (game.newtab) {
-            playButton.textContent = 'Open';
-            playButton.addEventListener('click', function() {
-              window.open(game.url, '_blank');
-            });
-          } else {
-            playButton.textContent = 'Play';
-            playButton.addEventListener('click', function() {
-              const encodedName = btoa(game.name);
-              const encodedUrl = btoa(game.url);
-              window.location.href = `play.html?game=${encodedName}`;
-            });
-          }
-          gameInfo.appendChild(playButton);
-
-          gameCard.appendChild(gameInfo);
+          link.appendChild(gameInfo);
+          gameCard.appendChild(link);
 
           gamesContainer.appendChild(gameCard);
         });
