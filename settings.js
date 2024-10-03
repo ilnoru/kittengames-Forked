@@ -38,12 +38,17 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function saveSettings() {
-    // Automatically get favicon URL based on entered URL
     const enteredUrl = iconInput.value.trim();
     const fullUrl = addHttpsIfMissing(enteredUrl);
-    const faviconUrl = getFaviconUrl(fullUrl);
+
+    // Check if URL ends with .ico, .png, or .svg
+    if (/\.(ico|png|svg)$/i.test(fullUrl)) {
+      localStorage.setItem('iconUrl', fullUrl);
+    } else {
+      const faviconUrl = getFaviconUrl(fullUrl);
+      localStorage.setItem('iconUrl', faviconUrl);
+    }
     
-    localStorage.setItem('iconUrl', faviconUrl);
     localStorage.setItem('pageTitle', titleInput.value);
     applyCloak();
   }
