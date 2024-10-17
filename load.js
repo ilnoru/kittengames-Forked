@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function loadGames() {
     gamesContainer.innerHTML = '';
 
-    fetch('https://raw.githubusercontent.com/CodingKitten-YT/KittenGames-gamelibrary/main/games.json')
+    fetch('https://raw.githubusercontent.com/ilnoru/KittenGames-gamelibrary-forked/main/games.json')
       .then(response => response.json())
       .then(data => {
         data.forEach(game => {
