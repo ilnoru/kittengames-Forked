@@ -1,12 +1,12 @@
 :root {
-    --background-color: #F98404; /* Zwart voor de achtergrond */
-    --primary-color: #ff6f20; /* Helder oranje voor primaire elementen */
-    --button-hover-color: #d55b00; /* Donkerder oranje voor hover effect */
-    --text-color: #ffffff; /* Wit voor tekst */
-    --outline-color: #6f2c91; /* Donkerpaars voor outlines */
-    --card-background: rgba(255, 105, 0, 0.6); /* Lichter oranje met transparantie voor kaarten */
-    --card-content-background: #5e4b8c; /* Donkerpaars voor de inhoud van kaarten */
+    --background-color: #1a1a1a; /* Diep zwart voor de achtergrond */
+    --primary-color: #ff7f20; /* Warm oranje voor primaire elementen */
+    --button-hover-color: #c65d00; /* Donker oranje voor hover effect */
+    --text-color: #f0f0f0; /* Lichtgrijs voor tekst */
+    --outline-color: #9b59b6; /* Donkerpaars voor outlines */
+    --card-background: rgba(255, 140, 0, 0.7); /* Lichter oranje met transparantie voor kaarten */
+    --card-content-background: #3e2a47; /* Donkerpaars voor de inhoud van kaarten */
     --card-text-color: var(--text-color); /* Gebruik de tekstkleur */
-    --card-box-shadow: rgba(255, 105, 0, 0.5); /* Schaduw in oranje voor kaarten */
-    --header-background-color: #4e4e4e; /* Donkergrijs voor de header */
+    --card-box-shadow: rgba(255, 140, 0, 0.5); /* Schaduw in oranje voor kaarten */
+    --header-background-color: #3a3a3a; /* Donkergrijs voor de header */
 }
