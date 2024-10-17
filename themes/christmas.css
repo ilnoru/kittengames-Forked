@@ -1,15 +1,14 @@
 :root {
     --background-color: #d40028;
     --primary-color: #13cc4e;
-    --button-hover-color: #00a53c;
+    --button-hover-color: #00a53c; /* Houd deze slechts één keer */
     --text-color: #f2f2f2;
     --outline-color: #c30022;
-    --card-background: #c30022(50, 50, 50, 0.8);
+    --card-background: rgba(195, 0, 34, 0.8); /* Correcte syntaxis voor transparante kleur */
     --card-content-background: #d40028;
     --card-text-color: var(--text-color);
-    --card-box-shadow: #13cc4e(255, 69, 0, 0.5);
+    --card-box-shadow: rgba(19, 204, 78, 0.5); /* Correcte syntaxis voor box shadow */
     --header-background-color: #b90f0f;
     --accent-color: #d40028;
     --button-background: #13cc4e;
-    --button-hover-color: #00a53c;
 }
