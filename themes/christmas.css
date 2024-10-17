@@ -9,6 +9,4 @@
     --card-text-color: var(--text-color);
     --card-box-shadow: rgba(19, 204, 78, 0.5); /* Correcte syntaxis voor box shadow */
     --header-background-color: #b90f0f;
-    --accent-color: #d40028;
-    --button-background: #13cc4e;
 }
