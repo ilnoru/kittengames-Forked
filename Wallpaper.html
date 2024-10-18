@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achtergrond Instellen</title>
+    <style>
+        body {
+            transition: background-image 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Stel je achtergrond in!</h1>
+    <input type="text" id="imageUrl" placeholder="Voer afbeeldingslink in">
+    <button id="setBackgroundBtn">Stel Achtergrond In</button>
+
+    <script>
+        document.getElementById('setBackgroundBtn').addEventListener('click', function() {
+            const imageUrl = document.getElementById('imageUrl').value;
+            document.body.style.backgroundImage = `url('${imageUrl}')`;
+            document.body.style.backgroundSize = 'cover'; // Optioneel om de afbeelding te schalen
+        });
+    </script>
+
+</body>
+</html>
