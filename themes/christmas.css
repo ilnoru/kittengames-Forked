@@ -1,12 +1,22 @@
 :root {
-    --background-image: url(https://www.google.com/imgres?q=achtergrond%20cool&imgurl=https%3A%2F%2Fwallpapers.com%2Fimages%2Ffeatured%2Fcool-phone-edbi0q4iftfa2zb4.jpg&imgrefurl=https%3A%2F%2Fwallpapers.com%2Fcool-phone&docid=A1Z155A-HxP4nM&tbnid=cpzaPaXnkGicLM&vet=12ahUKEwjX26jg8JeJAxXAhP0HHRTlKbUQM3oECGgQAA..i&w=1920&h=1200&hcb=2&ved=2ahUKEwjX26jg8JeJAxXAhP0HHRTlKbUQM3oECGgQAA);
-    --primary-color: #c72c41; /* Rood voor de primaire elementen */
-    --button-hover-color: #13cc4e; /* Donkerder rood voor hover effect */
-    --text-color: #f0f0f0; /* Zacht wit voor tekst */
-    --outline-color: #8B0000; /* Donker rood voor outlines */
-    --card-background: rgba(255, 0, 0, 0.2); /* Rood met minder transparantie voor kaarten */
-    --card-content-background: #13cc4e; /* Licht dieprood voor de inhoud van kaarten */
-    --card-text-color: var(--text-color); /* Gebruik de tekstkleur */
-    --card-box-shadow: rgba(0, 0, 0, 0.3); /* Zachte schaduw voor kaarten */
-    --header-background-color: #c72c41; /* Rood voor de header */
+    --background-color: #3d2c1e;
+    --primary-color: #a6814c;
+    --button-hover-color: #7a5b35;
+    --text-color: #f2f2f2;
+    --outline-color: #4d3a26;
+    --card-background: rgba(0, 0, 0, 0.4);
+    --card-content-background: #5a4632;
+    --card-text-color: var(--text-color);
+    --card-box-shadow: rgba(0, 0, 0, 0.4);
+    --header-background-color: #271a0d;
+    --background-image: url('https://picsum.photos/1920/1080'); /* Random afbeelding */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
