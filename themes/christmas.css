@@ -1,7 +1,7 @@
 :root {
     --background-color: #f7f7f7; /* Lichtgrijs voor de achtergrond */
     --primary-color: #c72c41; /* Rood voor de primaire elementen */
-    --button-hover-color: #a61d33; /* Donkerder rood voor hover effect */
+    --button-hover-color: #13cc4e; /* Donkerder rood voor hover effect */
     --text-color: #f0f0f0; /* Zacht wit voor tekst */
     --outline-color: #8B0000; /* Donker rood voor outlines */
     --card-background: rgba(255, 0, 0, 0.2); /* Rood met minder transparantie voor kaarten */
