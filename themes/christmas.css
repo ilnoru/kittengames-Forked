@@ -1,12 +1,12 @@
 :root {
-    --background-color: #3b9a3d; /* Donkergroen voor de achtergrond */
+    --background-color: #f7f7f7; /* Lichtgrijs voor de achtergrond */
     --primary-color: #c72c41; /* Rood voor de primaire elementen */
     --button-hover-color: #a61d33; /* Donkerder rood voor hover effect */
-    --text-color: #ffffff; /* Wit voor tekst */
-    --outline-color: #4d3a26; /* Neutraal bruin voor outlines */
-    --card-background: rgba(255, 0, 0, 0.4); /* Rood met transparantie voor kaarten */
-    --card-content-background: #a61d33; /* Diep rood voor de inhoud van kaarten */
+    --text-color: #f0f0f0; /* Zacht wit voor tekst */
+    --outline-color: #8B0000; /* Donker rood voor outlines */
+    --card-background: rgba(255, 0, 0, 0.2); /* Rood met minder transparantie voor kaarten */
+    --card-content-background: #ff4d4d; /* Licht dieprood voor de inhoud van kaarten */
     --card-text-color: var(--text-color); /* Gebruik de tekstkleur */
-    --card-box-shadow: rgba(0, 0, 0, 0.5); /* Zachte schaduw voor kaarten */
-    --header-background-color: #2e7d2f; /* Donkergroen voor de header */
+    --card-box-shadow: rgba(0, 0, 0, 0.3); /* Zachte schaduw voor kaarten */
+    --header-background-color: #c72c41; /* Rood voor de header */
 }
