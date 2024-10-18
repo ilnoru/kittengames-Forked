@@ -5,7 +5,7 @@
     --text-color: #f0f0f0; /* Zacht wit voor tekst */
     --outline-color: #8B0000; /* Donker rood voor outlines */
     --card-background: rgba(255, 0, 0, 0.2); /* Rood met minder transparantie voor kaarten */
-    --card-content-background: #ff4d4d; /* Licht dieprood voor de inhoud van kaarten */
+    --card-content-background: #13cc4e; /* Licht dieprood voor de inhoud van kaarten */
     --card-text-color: var(--text-color); /* Gebruik de tekstkleur */
     --card-box-shadow: rgba(0, 0, 0, 0.3); /* Zachte schaduw voor kaarten */
     --header-background-color: #c72c41; /* Rood voor de header */
